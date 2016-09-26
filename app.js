@@ -3,7 +3,7 @@ var exphbs  = require('express-handlebars'); //
 var sassMiddleware = require('node-sass-middleware'); //
 var browserify = require('browserify-middleware'); //
 var mongoose = require('mongoose');
-.mongoose.connect('MONGODB_URI');
+mongoose.connect('MONGODB_URI');
 var Schema = mongoose.Schema; // AFTER THIS LINE
 var Promise = require('bluebird'); //ADD THIS LINE
 Promise.promisifyAll(mongoose); //AND THIS LINE
